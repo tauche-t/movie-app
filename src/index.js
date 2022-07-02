@@ -4,14 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./styles.css";
-import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
-      <App />
-    </Router>
+    <App />
   </React.StrictMode>
 );
 
