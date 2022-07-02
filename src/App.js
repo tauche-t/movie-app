@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -9,14 +9,14 @@ import Home from "./routes/Home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/movie/:id" element={<Detail />}>
         </Route>
         <Route path="/" element={<Home />}>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
